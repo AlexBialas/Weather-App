@@ -30,8 +30,9 @@ body::before {
 }
 
 .main-container {
-  border: solid;
-  width: 400px;
+  border-radius: 5%;
+  width: 90%;
+  max-width: 400px;
   height: 600px;
   z-index: 1;
   background: linear-gradient(
@@ -40,5 +41,61 @@ body::before {
     rgba(255, 255, 255, 0.15)
   );
   position: relative;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 99px;
+  border: 1px solid transparent;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.15);
+  outline: none;
+  transition: 0.25s border;
+  color: white;
+  padding-right: 45px;
+}
+
+.city-input:focus {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.city-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.search-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    height: auto;
+    padding: 30px;
+  }
+
+  .city-input {
+    font-size: 24px;
+  }
 }
