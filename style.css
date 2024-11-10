@@ -48,6 +48,7 @@ body::before {
 
 .input-container {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .city-input {
@@ -101,3 +102,21 @@ body::before {
 }
 
 /*WEATHER INFO */
+
+.Weather-info {
+  padding: 10px;
+}
+
+.location-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+}
