@@ -105,6 +105,9 @@ body::before {
 
 .Weather-info {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .location-date-container {
@@ -119,4 +122,81 @@ body::before {
   align-items: center;
   gap: 6px;
   font-size: 20px;
+  gap: 8px;
+}
+
+.weather-summary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-summary-img {
+  width: 120px;
+  height: 120px;
+}
+
+.weather-summary-info {
+  text-align: end;
+}
+
+.weather-conditions-container {
+  display: flex;
+  justify-content: space-between;
+}
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.condition-item span {
+  font-size: 30px;
+}
+
+.forecast-item-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.forecast-item-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.forecast-item-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.forecast-item-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.forecast-item {
+  min-width: 70px;
+  background-color: rgba(240, 248, 255, 0.151);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 12px;
+  margin-top: 40px;
+  transition: background 0.3s;
+}
+
+.forecast-item:hover {
+  background: rgba(255, 255, 255, 0.432);
+}
+
+.forecast-item-img {
+  width: 35px;
+  height: 35px;
+}
+
+.forecast-item-img {
+  object-fit: cover;
+  border-radius: 50%;
 }
