@@ -2,10 +2,6 @@
 
 A simple and responsive weather application that allows users to search for current weather conditions in different cities. Built using HTML, CSS, and JavaScript, this app interfaces with the OpenWeather API to fetch weather data.
 
-## Preview
-
-![Weather App Preview](https://via.placeholder.com/600x400?text=Weather+App+Preview)
-
 ## Features
 
 - Search for any city and get real-time weather updates
