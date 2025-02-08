@@ -1,5 +1,8 @@
 # Weather App
 
+![Uploading Screenshot from 2025-02-08 10-00-07.png…]()
+
+
 A simple and responsive weather application that allows users to search for current weather conditions in different cities. Built using HTML, CSS, and JavaScript, this app interfaces with the OpenWeather API to fetch weather data.
 
 ## Features
